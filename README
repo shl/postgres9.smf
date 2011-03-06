@@ -1,0 +1,9 @@
+These two files are borrowed from 
+  http://opensolaris.org/jive/thread.jspa?messageID=510325
+with minor modifications.
+
+After customizing, throw them into 
+ /lib/svc/method/postgres_90
+ /lib/svc/manifest/application/database/postgresql_90.xml
+and import the manifest with
+ /usr/sbin/svccfg -v import /lib/svc/manifest/application/database/postgresql_90.xml
